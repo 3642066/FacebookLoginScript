@@ -1,0 +1,312 @@
+html,body {
+    color: #333333;
+    height:100%;
+    direction: ltr;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    line-height: 1.28;
+    text-align: left;
+    align:center;
+    margin: 0;padding: 0;
+}
+.content{
+	height:100%;
+	overflow:hidden;
+}
+
+    h3{
+    	color: #4a5998;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    }
+    h4{
+    color: #007f0f;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    }
+    h5{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    }
+    h1{
+    	    margin: 0;
+    padding: 0;
+    font-weight:bold;
+    }
+    textarea{
+    	margin-top:10px;
+    	border: 1px solid #B3B3B3;
+    	width:100%;
+    	height:50px;
+    }
+    a{
+    color: #3B5998;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+a h5:hover{
+	text-decoration: underline; color: white;
+}
+.clear {
+   height: 0;
+   font-size: 1px;
+   margin: 0;
+   padding: 0;
+   line-height: 0;
+   clear: both;
+}
+    #bar{
+		background-color: #3B5998;
+		height: 41px;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		z-index:1000;
+	}
+	.top-area{
+		width:1000px;
+		height:35px;
+		margin:6px auto 0;		
+		
+	}
+	.logo{
+		width:200px;
+		height:35px;
+		float:left;
+	}
+	.side-box{
+		width:780px;
+		height:35px;
+		margin-left: 211px;		
+		background-color: #627aad;
+	}
+	.link{
+		float:left;		
+		margin-left:30px;
+		margin-top:5px;
+	}
+	.link h5{
+		font-size:20px;
+	}
+	.logout{
+		float:right;
+		margin-right: 20px;
+    margin-top: 8px;
+	}
+	.login-box{
+		width:100%;		
+	}
+	#f-connect-button{
+		text-align:center;
+		padding-top:400px;
+	}
+     .big-container{
+        border-bottom: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        width: 1000px;
+        background-color: #FFFFFF;
+        margin:0 auto;
+        overflow:visible;
+    }
+    .container{
+        width: 485px;
+        padding-top: 20px;
+        height:100%;
+        float:left;
+    	padding-left: 10px;        
+    }
+    .temp{
+    	margin-top:40px;
+    	border:1px solid #B3B3B3;
+    	float:left;
+    	overflow:visible;
+    }
+    .left-sidebar{
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 5px;
+    	padding-right: 5px;
+        margin-top: 39px;
+        height:100%;
+        float:left;        
+    }
+    .right-sidebar{
+        padding-top: 20px;
+        padding-left: 15px;
+        height:100%;
+        float:right; 
+        padding-right: 10px;
+   		width: 260px;       
+    }
+    .sponsor{
+    	height:250px;
+    	padding-bottom: 10px;
+   		padding-top: 10px;
+    	border-bottom:1px solid #B3B3B3;
+    }
+    .footer{
+    	height:30px;
+    	padding-left: 220px;
+    	padding-top: 5px;
+    }
+    .profile-pic{
+    	width:200px;
+    	margin-left:-5px;
+    	padding-bottom:10px;
+    	border-bottom:1px solid #B3B3B3;
+    }
+    .sidebar-title{
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    	border-bottom:1px solid #B3B3B3;
+    }
+    .friend-list{
+    	width:200px;
+    	height:50px;
+    	padding-top: 10px;
+
+    }
+    .friend-thumb{
+    	width:60px;
+    	float:left;
+    }
+	.friend-name{
+	overflow: hidden;
+	float:right;
+    word-wrap: normal;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 125px;
+	}
+	.user-info{
+		width:425px;
+		float:left;
+	}
+	.profile-info{
+		color: #666666;
+		line-height: 15px;
+    margin-top: 4px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #B3B3B3;
+	}
+	.like{
+		width:60px;
+		margin-right: -10px;
+		float:right;
+	}
+	.status-update{
+		padding-top: 7px;
+		height:100px;
+	}
+	.status-success-message{
+		float:left;
+		margin-top:5px;
+		margin-bottom: 2px;
+		width:310px;
+		height:24px;
+		border:1px solid green;
+		background-color:#cfffd5;
+	}
+	#post-button{
+		float:right;
+		padding-top: 5px;
+		padding-left: 4px;
+		padding-bottom: 4px;
+	}
+	#publish-button{
+		float:right;
+		padding-top: 5px;
+		padding-left: 4px;
+		padding-bottom: 4px;
+	}
+	.news-feed{
+		
+	}
+	.news{
+		margin-top: 5px;
+    	padding-top: 10px;
+		width:100%;
+		overflow:auto;
+		border-top:1px solid #dad9d9;
+	}
+	.news-friend-thumb{
+		width:55px;
+		padding:5px;
+		float:left;
+	}
+	.news-content{
+		float:left;
+		width:420px;
+	}
+	.news-friend-name{
+		padding-top: 5px;
+		float:left;
+	}
+	.to{
+		padding-top: 5px;
+		float:left;
+		padding-left: 10px;
+    padding-right: 10px;
+	}
+	.message{
+				padding-top:5px;
+	}
+	.external-image{
+		float:left;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-right:10px;
+	}
+	.external-image img{
+		max-width:90px;
+	}
+	.news-external{
+		float:left;
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-right:10px;
+		width: 310px;
+	}
+	.news-caption{
+		padding-top:5px;		
+	}
+	.news-desc{
+		padding-top:5px;
+	}
+	.comment-like{
+		padding-bottom:10px;
+		color: #6D84B4;
+	}
+	.news-icon{
+		padding-right:5px;
+		float:left;
+	}
+	.tagged-photos{
+		width:100%;
+		border-bottom:1px solid #B3B3B3;
+		padding-bottom:5px;
+		margin-bottom:5px;
+		margin-top: 10px;
+		overflow:auto;
+	}
+
+	.single-photo{
+		height:75px;
+		width:75px;
+		border:1px solid #9c9c9c;
+		margin: 4px;
+    	float:left;
+    	overflow:hidden;
+	}
+	.single-photo img{
+		min-width:75px;
+		min-height:75px;
+	} 
