@@ -1,7 +1,7 @@
 <?php
 //Application Configurations
-$app_id		= "1418008911748516";
-$app_secret	= "55affc8a9c81b10d9ddf850b6415b3d7";
+$app_id		= "your app id";
+$app_secret	= "your app secret";
 $site_url	= "http://fosterzen.com/Facebook_Login/index.php";
 include_once "src/facebook.php";
 
