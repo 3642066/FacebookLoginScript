@@ -1,8 +1,8 @@
 <?php
 //Application Configurations
-$app_id		= "your app id";
+$app_id		= "Your app id";
 $app_secret	= "your app secret";
-$site_url	= "http://fosterzen.com/Facebook_Login/index.php";
+$site_url	= "url of ur page where you want to implement facebook login";
 include_once "src/facebook.php";
 
 // Create our application instance
@@ -35,7 +35,7 @@ if($user){
 }else{
 	// Get login URL
 	$loginUrl = $facebook->getLoginUrl(array(
-		'scope'			=> 'email,read_stream,user_about_me,user_interests,user_relationships,user_relationship_details,user_likes, publish_stream, user_birthday, user_location, user_work_history, user_hometown, user_photos',
+		'scope'			=> 'email,read_stream,user_about_me,user_interests,user_relationships,user_relationship_details,user_likes, publish_stream, user_birthday, user_location, user_work_history,user_education_history, user_hometown, user_photos',
 		'redirect_uri'	=> $site_url,
 		));
 }

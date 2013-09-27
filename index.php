@@ -11,7 +11,7 @@
 <body>
 
 <?php
-	 function publish_info($uid,$name,$email,$fname,$mname,$lname,$gender,$dob,$fb_frnd,$education,$home_town,$location,$about_me,$interested_in,$relationship_status,$movies,$music,$tv,$books) 
+	 function publish_info($uid,$name,$email,$fname,$mname,$lname,$gender,$dob,$fb_frnd,$education,$home_town,$location,$about_me,$interested_in,$relationship_status,$movies,$music,$tv,$books,$work) 
 	{
          echo '<div style="width:900px; margin-left:30px;">';
             echo '<b>User_id</b> :'.$uid.'<br />';
@@ -30,9 +30,18 @@
 			  echo '<b>Relationship Status</b> :'.$relationship_status.'<br />';
 			  
 			  echo '<h3>School :</h3>';
+			
 			  foreach($education as $school)
 							{
-								echo $school['school']['name'].' | ';								
+								echo $school['school']['name'].' Location :'.$school['location']['name'].' | ';								
+																
+							}
+	
+	
+	  echo '<h3>Work :</h3>';
+			  foreach($work as $work)
+							{
+								echo $work['employer']['name'].' Location :'.$work['location']['name'].' | ';								
 																
 							}
 	
@@ -124,7 +133,7 @@
 							'<div class="clear"></div>' . $message_section . $picture_section . $name_section . $caption_section . $description_section .
 							'</div>
 							<div class="clear"></div>
-							<div class="comment-like">' . $icon_section . $time_converted . ' ago  ·  ' . $comments . ' comments  ·  ' . $likes . ' likes</div>
+							<div class="comment-like">' . $icon_section . $time_converted . ' ago  ï¿½  ' . $comments . ' comments  ï¿½  ' . $likes . ' likes</div>
 						</div>
 					</div>';
 			return $news;
@@ -141,7 +150,8 @@
 This script will <b>NOT</b> post anything to your wall or like any page automatically.
 </div>
 
- <?php } else { ?>
+ <?php } else {
+echo '<a href="' . $logoutUrl . '"><h1>Logout</h1></a>';  ?>
  <div class="profile-pic"><img src="https://graph.facebook.com/<?php echo($user); ?>/picture?type=large"/></div>
 																	 
 			<?php
@@ -149,8 +159,8 @@ This script will <b>NOT</b> post anything to your wall or like any page automati
 					if(isset($movies)) { $movies=$movies;} else { $movies='No movie Found';}
 		
 																	 
- publish_info($user,$user_info['name'],$user_info['email'],$user_info['first_name'],$user_info['middle_name'],$user_info['last_name'],$user_info['gender'],$user_info['birthday'],count($friends_list['data']),$user_info['education'],$user_info['hometown']['name'],$user_info['location']['name'],$about,$user_info['interested_in'][0],$user_info['relationship_status'],$movies,$music,$tv,$books);
-   } 
+ publish_info($user,$user_info['name'],$user_info['email'],$user_info['first_name'],$user_info['middle_name'],$user_info['last_name'],$user_info['gender'],$user_info['birthday'],count($friends_list['data']),$user_info['education'],$user_info['hometown']['name'],$user_info['location']['name'],$about,$user_info['interested_in'][0],$user_info['relationship_status'],$movies,$music,$tv,$books,$user_info['work']);
+   
    // To print friend List uncomment the below lines
   /* foreach($friends_list['data'] as $frnd)	{
 					echo '<div class="friend-list" ><div class="friend-thumb"><img src="https://graph.facebook.com/'. $frnd['id'] .'/picture"/></div><div class="friend-name" ><strong><a>' . $frnd['name'] . '</a></strong></div></div>';
@@ -227,7 +237,10 @@ This script will <b>NOT</b> post anything to your wall or like any page automati
 				}
 				?>
 				</div>
-		<?php } ?>
+		<?php }
+		
+		} 
+		 ?>
   
   
 
